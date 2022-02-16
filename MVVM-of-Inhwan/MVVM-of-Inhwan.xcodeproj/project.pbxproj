@@ -17,6 +17,11 @@
 		19692E1C27BCDFC000EAFBEF /* MVVM_of_InhwanUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19692E1B27BCDFC000EAFBEF /* MVVM_of_InhwanUITests.swift */; };
 		19692E1E27BCDFC000EAFBEF /* MVVM_of_InhwanUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19692E1D27BCDFC000EAFBEF /* MVVM_of_InhwanUITestsLaunchTests.swift */; };
 		19692E3127BCE2D000EAFBEF /* MainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19692E3027BCE2D000EAFBEF /* MainTabController.swift */; };
+		19692E3327BCE78A00EAFBEF /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19692E3227BCE78A00EAFBEF /* FeedVC.swift */; };
+		19692E3527BCE79A00EAFBEF /* SearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19692E3427BCE79A00EAFBEF /* SearchVC.swift */; };
+		19692E3727BCE7AA00EAFBEF /* ImageSelectorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19692E3627BCE7AA00EAFBEF /* ImageSelectorVC.swift */; };
+		19692E3927BCE7B600EAFBEF /* NotificationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19692E3827BCE7B600EAFBEF /* NotificationVC.swift */; };
+		19692E3B27BCE7E400EAFBEF /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19692E3A27BCE7E400EAFBEF /* ProfileVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,11 @@
 		19692E1B27BCDFC000EAFBEF /* MVVM_of_InhwanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVM_of_InhwanUITests.swift; sourceTree = "<group>"; };
 		19692E1D27BCDFC000EAFBEF /* MVVM_of_InhwanUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVM_of_InhwanUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		19692E3027BCE2D000EAFBEF /* MainTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainTabController.swift; path = ../../../../MainTabController.swift; sourceTree = "<group>"; };
+		19692E3227BCE78A00EAFBEF /* FeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FeedVC.swift; path = ../../../../FeedVC.swift; sourceTree = "<group>"; };
+		19692E3427BCE79A00EAFBEF /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SearchVC.swift; path = ../../../../SearchVC.swift; sourceTree = "<group>"; };
+		19692E3627BCE7AA00EAFBEF /* ImageSelectorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ImageSelectorVC.swift; path = ../../../../ImageSelectorVC.swift; sourceTree = "<group>"; };
+		19692E3827BCE7B600EAFBEF /* NotificationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NotificationVC.swift; path = ../../../../NotificationVC.swift; sourceTree = "<group>"; };
+		19692E3A27BCE7E400EAFBEF /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileVC.swift; path = ../../../../ProfileVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +163,11 @@
 			isa = PBXGroup;
 			children = (
 				19692E3027BCE2D000EAFBEF /* MainTabController.swift */,
+				19692E3227BCE78A00EAFBEF /* FeedVC.swift */,
+				19692E3427BCE79A00EAFBEF /* SearchVC.swift */,
+				19692E3627BCE7AA00EAFBEF /* ImageSelectorVC.swift */,
+				19692E3827BCE7B600EAFBEF /* NotificationVC.swift */,
+				19692E3A27BCE7E400EAFBEF /* ProfileVC.swift */,
 			);
 			name = Controller;
 			path = "New Group1/Controller";
@@ -312,7 +327,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				19692DFF27BCDFBF00EAFBEF /* ViewController.swift in Sources */,
+				19692E3727BCE7AA00EAFBEF /* ImageSelectorVC.swift in Sources */,
+				19692E3927BCE7B600EAFBEF /* NotificationVC.swift in Sources */,
+				19692E3B27BCE7E400EAFBEF /* ProfileVC.swift in Sources */,
+				19692E3527BCE79A00EAFBEF /* SearchVC.swift in Sources */,
 				19692DFB27BCDFBF00EAFBEF /* AppDelegate.swift in Sources */,
+				19692E3327BCE78A00EAFBEF /* FeedVC.swift in Sources */,
 				19692E3127BCE2D000EAFBEF /* MainTabController.swift in Sources */,
 				19692DFD27BCDFBF00EAFBEF /* SceneDelegate.swift in Sources */,
 			);
