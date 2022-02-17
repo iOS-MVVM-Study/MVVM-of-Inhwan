@@ -22,6 +22,8 @@
 		19692E3727BCE7AA00EAFBEF /* ImageSelectorVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19692E3627BCE7AA00EAFBEF /* ImageSelectorVC.swift */; };
 		19692E3927BCE7B600EAFBEF /* NotificationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19692E3827BCE7B600EAFBEF /* NotificationVC.swift */; };
 		19692E3B27BCE7E400EAFBEF /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19692E3A27BCE7E400EAFBEF /* ProfileVC.swift */; };
+		19692E3D27BD700B00EAFBEF /* FeedCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19692E3C27BD700B00EAFBEF /* FeedCVC.swift */; };
+		19692E4327BE29F600EAFBEF /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19692E4227BE29F600EAFBEF /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		19692E3627BCE7AA00EAFBEF /* ImageSelectorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ImageSelectorVC.swift; path = ../../../../ImageSelectorVC.swift; sourceTree = "<group>"; };
 		19692E3827BCE7B600EAFBEF /* NotificationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NotificationVC.swift; path = ../../../../NotificationVC.swift; sourceTree = "<group>"; };
 		19692E3A27BCE7E400EAFBEF /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileVC.swift; path = ../../../../ProfileVC.swift; sourceTree = "<group>"; };
+		19692E3C27BD700B00EAFBEF /* FeedCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCVC.swift; sourceTree = "<group>"; };
+		19692E4227BE29F600EAFBEF /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,6 +152,7 @@
 		19692E2A27BCE19D00EAFBEF /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				19692E4227BE29F600EAFBEF /* Extensions.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -184,6 +189,7 @@
 		19692E2E27BCE1C500EAFBEF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				19692E3C27BD700B00EAFBEF /* FeedCVC.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -330,10 +336,12 @@
 				19692E3727BCE7AA00EAFBEF /* ImageSelectorVC.swift in Sources */,
 				19692E3927BCE7B600EAFBEF /* NotificationVC.swift in Sources */,
 				19692E3B27BCE7E400EAFBEF /* ProfileVC.swift in Sources */,
+				19692E3D27BD700B00EAFBEF /* FeedCVC.swift in Sources */,
 				19692E3527BCE79A00EAFBEF /* SearchVC.swift in Sources */,
 				19692DFB27BCDFBF00EAFBEF /* AppDelegate.swift in Sources */,
 				19692E3327BCE78A00EAFBEF /* FeedVC.swift in Sources */,
 				19692E3127BCE2D000EAFBEF /* MainTabController.swift in Sources */,
+				19692E4327BE29F600EAFBEF /* Extensions.swift in Sources */,
 				19692DFD27BCDFBF00EAFBEF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

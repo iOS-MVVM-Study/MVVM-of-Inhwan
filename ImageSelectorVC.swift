@@ -6,10 +6,10 @@ class ImageSelectorVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setUI()
+        configureUI()
     }
     
-    private func setUI() {
+    private func configureUI() {
         view.backgroundColor = .systemRed
     }
 }

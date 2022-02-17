@@ -6,20 +6,20 @@ class MainTabController: UITabBarController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setUI()
+        configureUI()
         configureVCs()
     }
     
     // MARK: - func
     
-    private func setUI() {
+    private func configureUI() {
         view.backgroundColor = .white
-        tabBar.barTintColor = .white
-        tabBar.isTranslucent = false
+        tabBar.tintColor = .black
     }
     
     private func configureVCs() {
-        let feedVC = templateNavigationVC(unselectedImage: #imageLiteral(resourceName: "home_unselected"), selectedImage: #imageLiteral(resourceName: "home_selected"), rootViewController: FeedVC())
+        let layout = UICollectionViewFlowLayout()
+        let feedVC = templateNavigationVC(unselectedImage: #imageLiteral(resourceName: "home_unselected"), selectedImage: #imageLiteral(resourceName: "home_selected"), rootViewController: FeedVC(collectionViewLayout: layout))
         let searchVC = templateNavigationVC(unselectedImage: #imageLiteral(resourceName: "search_unselected"), selectedImage: #imageLiteral(resourceName: "search_selected"), rootViewController: SearchVC())
         let imageSelectorVC = templateNavigationVC(unselectedImage: #imageLiteral(resourceName: "plus_unselected"), selectedImage: #imageLiteral(resourceName: "plus_unselected"), rootViewController: ImageSelectorVC())
         let notificationsVC = templateNavigationVC(unselectedImage: #imageLiteral(resourceName: "like_unselected"), selectedImage: #imageLiteral(resourceName: "like_selected"), rootViewController: NotificationVC())
