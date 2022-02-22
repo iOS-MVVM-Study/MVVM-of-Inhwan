@@ -13,10 +13,11 @@ class RegistrationVC: UIViewController {
     
     private var viewModel = RegistrationViewModel()
     
-    private let plusPhotoButton: UIButton = {
+    private lazy var plusPhotoButton: UIButton = {
         let button = UIButton(type: .system)
         button.setImage(#imageLiteral(resourceName: "plus_photo"), for: .normal)
         button.tintColor = .white
+        button.addTarget(self, action: #selector(addPhotoButtonDidTap(_:)), for: .touchUpInside)
         return button
     }()
     
@@ -91,6 +92,13 @@ class RegistrationVC: UIViewController {
     
     // MARK: - Actions
     
+    @objc private func addPhotoButtonDidTap(_ sender: UIButton) {
+        let picker = UIImagePickerController()
+        picker.delegate = self
+        picker.allowsEditing = true
+        present(picker, animated: true, completion: nil)
+    }
+    
     @objc private func loginDidTap(_ sender: UIButton) {
         navigationController?.popViewController(animated: true)
     }
@@ -113,10 +121,26 @@ class RegistrationVC: UIViewController {
     }
 }
 
+// MARK: - Extensions
+
 extension RegistrationVC: FormViewModel {
     func updateForm() {
         signUpButton.backgroundColor = viewModel.buttonBackgroundColor
         signUpButton.setTitleColor(viewModel.buttonTitleColor, for: .normal)
         signUpButton.isEnabled = viewModel.formIsValid
+    }
+}
+
+extension RegistrationVC: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+        guard let selectedImage = info[.editedImage] as? UIImage else { return }
+        
+        plusPhotoButton.layer.cornerRadius = plusPhotoButton.frame.width / 2
+        plusPhotoButton.layer.masksToBounds = true
+        plusPhotoButton.layer.borderColor = UIColor.white.cgColor
+        plusPhotoButton.layer.borderWidth = 2
+        plusPhotoButton.setImage(selectedImage.withRenderingMode(.alwaysOriginal), for: .normal)
+        
+        dismiss(animated: true, completion: nil)
     }
 }
