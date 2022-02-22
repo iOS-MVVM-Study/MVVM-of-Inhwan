@@ -29,14 +29,9 @@ class LoginVC: UIViewController {
         return textField
     }()
     
-    private let loginButton: UIButton = {
-        let button = UIButton(type: .system)
+    private let loginButton: CustomButton = {
+        let button = CustomButton()
         button.setTitle("Log In", for: .normal)
-        button.setTitleColor(.white, for: .normal)
-        button.layer.cornerRadius = 5
-        button.backgroundColor = #colorLiteral(red: 0.3647058904, green: 0.06666667014, blue: 0.9686274529, alpha: 1)
-        button.setHeight(50)
-        button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20)
         return button
     }()
     
@@ -50,6 +45,7 @@ class LoginVC: UIViewController {
     private let dontHaveAccountButton: UIButton = {
         let button = UIButton(type: .system)
         button.attributedTitle(firstPart: "Don't have an account?", secondPart: "Sign Up")
+        button.addTarget(self, action: #selector(signUpDidTap(_:)), for: .touchUpInside)
         return button
     }()
     
@@ -66,11 +62,7 @@ class LoginVC: UIViewController {
         navigationController?.navigationBar.isHidden = true
         navigationController?.navigationBar.barStyle = .black
         
-        let gradient = CAGradientLayer()
-        gradient.colors = [UIColor.systemPurple.cgColor, UIColor.systemBlue.cgColor]
-        gradient.locations = [0, 1]
-        view.layer.addSublayer(gradient)
-        gradient.frame = view.frame
+        configureGradientLayer()
         
         view.addSubview(iconImageView)
         iconImageView.centerX(inView: view)
@@ -87,5 +79,12 @@ class LoginVC: UIViewController {
         view.addSubview(dontHaveAccountButton)
         dontHaveAccountButton.centerX(inView: view)
         dontHaveAccountButton.anchor(bottom: view.safeAreaLayoutGuide.bottomAnchor)
+    }
+    
+    // MARK: - Actions
+    
+    @objc private func signUpDidTap(_ sender: UIButton) {
+        let nextVC = RegistrationVC()
+        navigationController?.pushViewController(nextVC, animated: true)
     }
 }
