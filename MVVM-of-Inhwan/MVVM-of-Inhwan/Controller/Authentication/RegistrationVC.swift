@@ -11,6 +11,8 @@ class RegistrationVC: UIViewController {
     
     // MARK: - Properties
     
+    private var viewModel = RegistrationViewModel()
+    
     private let plusPhotoButton: UIButton = {
         let button = UIButton(type: .system)
         button.setImage(#imageLiteral(resourceName: "plus_photo"), for: .normal)
@@ -52,6 +54,7 @@ class RegistrationVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureUI()
+        configureNotificationObservers()
     }
     
     // MARK: - func
@@ -80,9 +83,40 @@ class RegistrationVC: UIViewController {
         alreadyHaveAccountButton.anchor(bottom: view.safeAreaLayoutGuide.bottomAnchor)
     }
     
+    private func configureNotificationObservers() {
+        [emailTextField, passwordTextField, fullnameTextField, usernameTextField].forEach {
+            $0.addTarget(self, action: #selector(textDidChange(_:)), for: .editingChanged)
+        }
+    }
+    
     // MARK: - Actions
     
     @objc private func loginDidTap(_ sender: UIButton) {
         navigationController?.popViewController(animated: true)
+    }
+    
+    @objc private func textDidChange(_ sender: UITextField) {
+        switch sender {
+        case emailTextField:
+            viewModel.email = sender.text
+        case passwordTextField:
+            viewModel.password = sender.text
+        case fullnameTextField:
+            viewModel.fullname = sender.text
+        case usernameTextField:
+            viewModel.username = sender.text
+        default:
+            break
+        }
+        
+        updateForm()
+    }
+}
+
+extension RegistrationVC: FormViewModel {
+    func updateForm() {
+        signUpButton.backgroundColor = viewModel.buttonBackgroundColor
+        signUpButton.setTitleColor(viewModel.buttonTitleColor, for: .normal)
+        signUpButton.isEnabled = viewModel.formIsValid
     }
 }

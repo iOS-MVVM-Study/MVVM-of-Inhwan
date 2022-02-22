@@ -102,7 +102,14 @@ class LoginVC: UIViewController {
         } else {
             viewModel.password = sender.text
         }
-        
+        updateForm()
+    }
+}
+
+// MARK: - Extensions
+
+extension LoginVC: FormViewModel {
+    func updateForm() {
         loginButton.backgroundColor = viewModel.buttonBackgroundColor
         loginButton.setTitleColor(viewModel.buttonTitleColor, for: .normal)
         loginButton.isEnabled = viewModel.formIsValid
