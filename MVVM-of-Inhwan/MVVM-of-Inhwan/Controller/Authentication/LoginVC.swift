@@ -11,6 +11,8 @@ class LoginVC: UIViewController {
     
     // MARK: - Properties
     
+    private var viewModel = LoginViewModel()
+    
     private let iconImageView: UIImageView = {
         let imageView = UIImageView(image: #imageLiteral(resourceName: "Instagram_logo_white"))
         imageView.contentMode = .scaleAspectFill
@@ -54,6 +56,7 @@ class LoginVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureUI()
+        configureNotificationObservers()
     }
     
     private func configureUI() {
@@ -81,10 +84,27 @@ class LoginVC: UIViewController {
         dontHaveAccountButton.anchor(bottom: view.safeAreaLayoutGuide.bottomAnchor)
     }
     
+    private func configureNotificationObservers() {
+        emailTextField.addTarget(self, action: #selector(textDidChange(_:)), for: .editingChanged)
+        passwordTextField.addTarget(self, action: #selector(textDidChange(_:)), for: .editingChanged)
+    }
+    
     // MARK: - Actions
     
     @objc private func signUpDidTap(_ sender: UIButton) {
         let nextVC = RegistrationVC()
         navigationController?.pushViewController(nextVC, animated: true)
+    }
+    
+    @objc private func textDidChange(_ sender: UITextField) {
+        if sender == emailTextField {
+            viewModel.email = sender.text
+        } else {
+            viewModel.password = sender.text
+        }
+        
+        loginButton.backgroundColor = viewModel.buttonBackgroundColor
+        loginButton.setTitleColor(viewModel.buttonTitleColor, for: .normal)
+        loginButton.isEnabled = viewModel.formIsValid
     }
 }
