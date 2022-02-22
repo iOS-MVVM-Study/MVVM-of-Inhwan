@@ -13,7 +13,7 @@ class CustomTextField: UITextField {
     
     init(placeHolder: String) {
         super.init(frame: .zero)
-        configureUI(placeholder: placeholder ?? "")
+        configureUI(placeholder: placeHolder)
     }
     
     required init?(coder: NSCoder) {

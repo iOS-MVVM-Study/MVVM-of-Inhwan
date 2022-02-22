@@ -60,16 +60,16 @@
 		19692E1727BCDFC000EAFBEF /* MVVM-of-InhwanUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MVVM-of-InhwanUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		19692E1B27BCDFC000EAFBEF /* MVVM_of_InhwanUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVM_of_InhwanUITests.swift; sourceTree = "<group>"; };
 		19692E1D27BCDFC000EAFBEF /* MVVM_of_InhwanUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVM_of_InhwanUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		19692E3027BCE2D000EAFBEF /* MainTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = MainTabController.swift; path = ../../Controller/MainTabController.swift; sourceTree = "<group>"; };
-		19692E3227BCE78A00EAFBEF /* FeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = FeedVC.swift; path = ../../Controller/FeedVC.swift; sourceTree = "<group>"; };
-		19692E3427BCE79A00EAFBEF /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SearchVC.swift; path = ../../Controller/SearchVC.swift; sourceTree = "<group>"; };
-		19692E3627BCE7AA00EAFBEF /* ImageSelectorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ImageSelectorVC.swift; path = ../../Controller/ImageSelectorVC.swift; sourceTree = "<group>"; };
-		19692E3827BCE7B600EAFBEF /* NotificationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = NotificationVC.swift; path = ../../Controller/NotificationVC.swift; sourceTree = "<group>"; };
-		19692E3A27BCE7E400EAFBEF /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileVC.swift; path = ../../Controller/ProfileVC.swift; sourceTree = "<group>"; };
+		19692E3027BCE2D000EAFBEF /* MainTabController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabController.swift; sourceTree = "<group>"; };
+		19692E3227BCE78A00EAFBEF /* FeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
+		19692E3427BCE79A00EAFBEF /* SearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchVC.swift; sourceTree = "<group>"; };
+		19692E3627BCE7AA00EAFBEF /* ImageSelectorVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageSelectorVC.swift; sourceTree = "<group>"; };
+		19692E3827BCE7B600EAFBEF /* NotificationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationVC.swift; sourceTree = "<group>"; };
+		19692E3A27BCE7E400EAFBEF /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		19692E3C27BD700B00EAFBEF /* FeedCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCVC.swift; sourceTree = "<group>"; };
 		19692E4227BE29F600EAFBEF /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		19692E4527BEAA0900EAFBEF /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginVC.swift; path = ../../../Controller/Authentication/LoginVC.swift; sourceTree = "<group>"; };
-		19692E4727BEAA1C00EAFBEF /* RegistrationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RegistrationVC.swift; path = ../../../Controller/Authentication/RegistrationVC.swift; sourceTree = "<group>"; };
+		19692E4527BEAA0900EAFBEF /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
+		19692E4727BEAA1C00EAFBEF /* RegistrationVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationVC.swift; sourceTree = "<group>"; };
 		19692E4927BEB24700EAFBEF /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -181,16 +181,14 @@
 				19692E3827BCE7B600EAFBEF /* NotificationVC.swift */,
 				19692E3A27BCE7E400EAFBEF /* ProfileVC.swift */,
 			);
-			name = Controller;
-			path = "New Group1/Controller";
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		19692E2D27BCE1A900EAFBEF /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			name = ViewModel;
-			path = ../ViewModel;
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		19692E2E27BCE1C500EAFBEF /* View */ = {
