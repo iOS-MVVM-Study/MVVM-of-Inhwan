@@ -1,0 +1,28 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'MVVM-of-Inhwan' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for MVVM-of-Inhwan
+    pod 'Firebase/Auth'
+    pod 'Firebase/Firestore'
+    pod 'Firebase/Database'
+    pod 'Firebase/Storage'
+    pod 'Firebase/Messaging'
+    pod 'ActiveLabel'
+    pod 'SDWebImage', '~>4.4.2'
+    pod 'JGProgressHUD', '~>2.0.3'
+    pod 'YPImagePicker'
+
+  target 'MVVM-of-InhwanTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'MVVM-of-InhwanUITests' do
+    # Pods for testing
+  end
+
+end
