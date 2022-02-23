@@ -17,8 +17,29 @@ struct AuthCredentials {
 }
 
 struct AuthService {
-    static func registerUser(withCredential credentials: AuthCredentials) {
-        print("DEBUG: Credentials are \(credentials)")
+    static func registerUser(withCredential credentials: AuthCredentials, completion: @escaping (Error?) -> Void) {
+        ImageUploader.uploadImage(image: credentials.profileImage) { imageUrl in
+            dump(imageUrl)
+            Auth.auth().createUser(withEmail: credentials.email, password: credentials.password) { results, error in
+                print("RESULTS:")
+                dump(results)
+                dump(error)
+                if let error = error {
+                    print("DEBUG: Failed to register user \(error.localizedDescription)")
+                    return
+                }
+                
+                guard let uid = results?.user.uid else { return }
+                
+                let data: [String: Any] = ["email": credentials.email,
+                                           "fullname": credentials.fullname,
+                                           "profileImageUrl": imageUrl,
+                                           "uid": uid,
+                                           "username": credentials.username]
+                
+                Firestore.firestore().collection("users").document(uid).setData(data, completion: completion)
+            }
+        }
     }
     
 }
