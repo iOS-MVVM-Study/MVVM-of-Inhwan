@@ -134,13 +134,22 @@ class RegistrationVC: UIViewController {
                                           fullname: fullname, username: username,
                                           profileImage: profileImage)
         
-        AuthService.registerUser(withCredential: credentials) { error in
-            if let error = error {
+//        AuthService.registerUser(withCredential: credentials) { error in
+//            if let error = error {
+//                print("DEBUG: Failed to register user \(error.localizedDescription)")
+//                return
+//            }
+//            
+//            print("DEBUG: Successfully registered user with Firestore..")
+//        }
+        
+        Task {
+            do {
+                try await AuthService.registerUser(withCredential: credentials)
+                print("DEBUG: Successfully registered user with Firestore..")
+            } catch let error {
                 print("DEBUG: Failed to register user \(error.localizedDescription)")
-                return
             }
-            
-            print("DEBUG: Successfully registered user with Firestore..")
         }
     }
 }

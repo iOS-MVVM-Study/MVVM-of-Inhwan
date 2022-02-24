@@ -31,10 +31,16 @@
 		19692E4A27BEB24700EAFBEF /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19692E4927BEB24700EAFBEF /* CustomTextField.swift */; };
 		19801FB927C4D2D9007D7FB9 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19801FB827C4D2D9007D7FB9 /* CustomButton.swift */; };
 		19801FBC27C4DCE9007D7FB9 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19801FBB27C4DCE9007D7FB9 /* AuthenticationViewModel.swift */; };
+		19BA02E927C7B0D800F4EB1A /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 19BA02E827C7B0D800F4EB1A /* FirebaseAuth */; };
+		19BA02EB27C7B0D800F4EB1A /* FirebaseDatabaseSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 19BA02EA27C7B0D800F4EB1A /* FirebaseDatabaseSwift-Beta */; };
+		19BA02ED27C7B0D800F4EB1A /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 19BA02EC27C7B0D800F4EB1A /* FirebaseFirestoreSwift-Beta */; };
+		19BA02EF27C7B0D800F4EB1A /* FirebaseFunctionsSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 19BA02EE27C7B0D800F4EB1A /* FirebaseFunctionsSwift-Beta */; };
+		19BA02F127C7B0D800F4EB1A /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 19BA02F027C7B0D800F4EB1A /* FirebaseMessaging */; };
+		19BA02F327C7B0D800F4EB1A /* FirebaseStorageSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 19BA02F227C7B0D800F4EB1A /* FirebaseStorageSwift-Beta */; };
 		19E9C38527C5487900B0573B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 19E9C38427C5487900B0573B /* GoogleService-Info.plist */; };
-		2B0978149F905ED7FD042F13 /* Pods_MVVM_of_Inhwan_MVVM_of_InhwanUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACC0A460130ED133CEFD7FF5 /* Pods_MVVM_of_Inhwan_MVVM_of_InhwanUITests.framework */; };
-		85983B2CB3B0E8D50843B202 /* Pods_MVVM_of_InhwanTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A752BBC397D7EBF9A76A0C6E /* Pods_MVVM_of_InhwanTests.framework */; };
-		D73F59425A54C39985DA957C /* Pods_MVVM_of_Inhwan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E765729964A6A6B8605E0D85 /* Pods_MVVM_of_Inhwan.framework */; };
+		83676D6396F6F1F1939EC4E5 /* Pods_MVVM_of_InhwanTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32786AC77A564CA4BBD092D6 /* Pods_MVVM_of_InhwanTests.framework */; };
+		861873AEE31B5942D112248B /* Pods_MVVM_of_Inhwan.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6C19A05541CFBCFE770FE947 /* Pods_MVVM_of_Inhwan.framework */; };
+		E4937E91CCD4CAEF5E6D1888 /* Pods_MVVM_of_Inhwan_MVVM_of_InhwanUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0FB7869CB43BED6B7D5DBE59 /* Pods_MVVM_of_Inhwan_MVVM_of_InhwanUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,7 +61,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0582FBD66FD5C5057D5EF1B0 /* Pods-MVVM-of-Inhwan-MVVM-of-InhwanUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM-of-Inhwan-MVVM-of-InhwanUITests.release.xcconfig"; path = "Target Support Files/Pods-MVVM-of-Inhwan-MVVM-of-InhwanUITests/Pods-MVVM-of-Inhwan-MVVM-of-InhwanUITests.release.xcconfig"; sourceTree = "<group>"; };
+		0FB7869CB43BED6B7D5DBE59 /* Pods_MVVM_of_Inhwan_MVVM_of_InhwanUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVM_of_Inhwan_MVVM_of_InhwanUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1968D88C27C560150024A53C /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
 		1968D88E27C5601D0024A53C /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		19692DF727BCDFBF00EAFBEF /* MVVM-of-Inhwan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVVM-of-Inhwan.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -85,14 +91,14 @@
 		19801FB827C4D2D9007D7FB9 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
 		19801FBB27C4DCE9007D7FB9 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
 		19E9C38427C5487900B0573B /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = "GoogleService-Info.plist"; path = "MVVM-of-Inhwan/GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
-		1F5A5D3FB459D7F92D4ACAB5 /* Pods-MVVM-of-InhwanTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM-of-InhwanTests.release.xcconfig"; path = "Target Support Files/Pods-MVVM-of-InhwanTests/Pods-MVVM-of-InhwanTests.release.xcconfig"; sourceTree = "<group>"; };
-		5C6BA9231837631BB8BD9591 /* Pods-MVVM-of-Inhwan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM-of-Inhwan.debug.xcconfig"; path = "Target Support Files/Pods-MVVM-of-Inhwan/Pods-MVVM-of-Inhwan.debug.xcconfig"; sourceTree = "<group>"; };
-		9884E771F32567B9FC585BFB /* Pods-MVVM-of-Inhwan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM-of-Inhwan.release.xcconfig"; path = "Target Support Files/Pods-MVVM-of-Inhwan/Pods-MVVM-of-Inhwan.release.xcconfig"; sourceTree = "<group>"; };
-		A752BBC397D7EBF9A76A0C6E /* Pods_MVVM_of_InhwanTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVM_of_InhwanTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		ACC0A460130ED133CEFD7FF5 /* Pods_MVVM_of_Inhwan_MVVM_of_InhwanUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVM_of_Inhwan_MVVM_of_InhwanUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		AF7DC8DA4D9B455A9C99D5AF /* Pods-MVVM-of-Inhwan-MVVM-of-InhwanUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM-of-Inhwan-MVVM-of-InhwanUITests.debug.xcconfig"; path = "Target Support Files/Pods-MVVM-of-Inhwan-MVVM-of-InhwanUITests/Pods-MVVM-of-Inhwan-MVVM-of-InhwanUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		E765729964A6A6B8605E0D85 /* Pods_MVVM_of_Inhwan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVM_of_Inhwan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F3EB8CAFF13030AC72EDF9E1 /* Pods-MVVM-of-InhwanTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM-of-InhwanTests.debug.xcconfig"; path = "Target Support Files/Pods-MVVM-of-InhwanTests/Pods-MVVM-of-InhwanTests.debug.xcconfig"; sourceTree = "<group>"; };
+		32786AC77A564CA4BBD092D6 /* Pods_MVVM_of_InhwanTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVM_of_InhwanTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3E19F5C62CCAD01FF3F706A7 /* Pods-MVVM-of-Inhwan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM-of-Inhwan.debug.xcconfig"; path = "Target Support Files/Pods-MVVM-of-Inhwan/Pods-MVVM-of-Inhwan.debug.xcconfig"; sourceTree = "<group>"; };
+		58BB22C1F64FBB36346A0DA5 /* Pods-MVVM-of-InhwanTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM-of-InhwanTests.debug.xcconfig"; path = "Target Support Files/Pods-MVVM-of-InhwanTests/Pods-MVVM-of-InhwanTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5F82BAC8029883DF378C3C6B /* Pods-MVVM-of-Inhwan.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM-of-Inhwan.release.xcconfig"; path = "Target Support Files/Pods-MVVM-of-Inhwan/Pods-MVVM-of-Inhwan.release.xcconfig"; sourceTree = "<group>"; };
+		6C19A05541CFBCFE770FE947 /* Pods_MVVM_of_Inhwan.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVM_of_Inhwan.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		814758C3E85C69C57B67760A /* Pods-MVVM-of-Inhwan-MVVM-of-InhwanUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM-of-Inhwan-MVVM-of-InhwanUITests.release.xcconfig"; path = "Target Support Files/Pods-MVVM-of-Inhwan-MVVM-of-InhwanUITests/Pods-MVVM-of-Inhwan-MVVM-of-InhwanUITests.release.xcconfig"; sourceTree = "<group>"; };
+		8AD48F5E2E796ED902273A20 /* Pods-MVVM-of-InhwanTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM-of-InhwanTests.release.xcconfig"; path = "Target Support Files/Pods-MVVM-of-InhwanTests/Pods-MVVM-of-InhwanTests.release.xcconfig"; sourceTree = "<group>"; };
+		AC386FF4C395A2DCB887B859 /* Pods-MVVM-of-Inhwan-MVVM-of-InhwanUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM-of-Inhwan-MVVM-of-InhwanUITests.debug.xcconfig"; path = "Target Support Files/Pods-MVVM-of-Inhwan-MVVM-of-InhwanUITests/Pods-MVVM-of-Inhwan-MVVM-of-InhwanUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,7 +106,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D73F59425A54C39985DA957C /* Pods_MVVM_of_Inhwan.framework in Frameworks */,
+				19BA02F127C7B0D800F4EB1A /* FirebaseMessaging in Frameworks */,
+				19BA02EB27C7B0D800F4EB1A /* FirebaseDatabaseSwift-Beta in Frameworks */,
+				19BA02ED27C7B0D800F4EB1A /* FirebaseFirestoreSwift-Beta in Frameworks */,
+				861873AEE31B5942D112248B /* Pods_MVVM_of_Inhwan.framework in Frameworks */,
+				19BA02E927C7B0D800F4EB1A /* FirebaseAuth in Frameworks */,
+				19BA02F327C7B0D800F4EB1A /* FirebaseStorageSwift-Beta in Frameworks */,
+				19BA02EF27C7B0D800F4EB1A /* FirebaseFunctionsSwift-Beta in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,7 +120,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				85983B2CB3B0E8D50843B202 /* Pods_MVVM_of_InhwanTests.framework in Frameworks */,
+				83676D6396F6F1F1939EC4E5 /* Pods_MVVM_of_InhwanTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,7 +128,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2B0978149F905ED7FD042F13 /* Pods_MVVM_of_Inhwan_MVVM_of_InhwanUITests.framework in Frameworks */,
+				E4937E91CCD4CAEF5E6D1888 /* Pods_MVVM_of_Inhwan_MVVM_of_InhwanUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,7 +143,7 @@
 				19692E1A27BCDFC000EAFBEF /* MVVM-of-InhwanUITests */,
 				19692DF827BCDFBF00EAFBEF /* Products */,
 				8ADC141F1BDDAA925E39B440 /* Pods */,
-				816D35AACB627793E05E9643 /* Frameworks */,
+				84BAE465CF4A1279BADE68D5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -256,12 +268,12 @@
 			path = Authentication;
 			sourceTree = "<group>";
 		};
-		816D35AACB627793E05E9643 /* Frameworks */ = {
+		84BAE465CF4A1279BADE68D5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E765729964A6A6B8605E0D85 /* Pods_MVVM_of_Inhwan.framework */,
-				ACC0A460130ED133CEFD7FF5 /* Pods_MVVM_of_Inhwan_MVVM_of_InhwanUITests.framework */,
-				A752BBC397D7EBF9A76A0C6E /* Pods_MVVM_of_InhwanTests.framework */,
+				6C19A05541CFBCFE770FE947 /* Pods_MVVM_of_Inhwan.framework */,
+				0FB7869CB43BED6B7D5DBE59 /* Pods_MVVM_of_Inhwan_MVVM_of_InhwanUITests.framework */,
+				32786AC77A564CA4BBD092D6 /* Pods_MVVM_of_InhwanTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -269,12 +281,12 @@
 		8ADC141F1BDDAA925E39B440 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				5C6BA9231837631BB8BD9591 /* Pods-MVVM-of-Inhwan.debug.xcconfig */,
-				9884E771F32567B9FC585BFB /* Pods-MVVM-of-Inhwan.release.xcconfig */,
-				AF7DC8DA4D9B455A9C99D5AF /* Pods-MVVM-of-Inhwan-MVVM-of-InhwanUITests.debug.xcconfig */,
-				0582FBD66FD5C5057D5EF1B0 /* Pods-MVVM-of-Inhwan-MVVM-of-InhwanUITests.release.xcconfig */,
-				F3EB8CAFF13030AC72EDF9E1 /* Pods-MVVM-of-InhwanTests.debug.xcconfig */,
-				1F5A5D3FB459D7F92D4ACAB5 /* Pods-MVVM-of-InhwanTests.release.xcconfig */,
+				3E19F5C62CCAD01FF3F706A7 /* Pods-MVVM-of-Inhwan.debug.xcconfig */,
+				5F82BAC8029883DF378C3C6B /* Pods-MVVM-of-Inhwan.release.xcconfig */,
+				AC386FF4C395A2DCB887B859 /* Pods-MVVM-of-Inhwan-MVVM-of-InhwanUITests.debug.xcconfig */,
+				814758C3E85C69C57B67760A /* Pods-MVVM-of-Inhwan-MVVM-of-InhwanUITests.release.xcconfig */,
+				58BB22C1F64FBB36346A0DA5 /* Pods-MVVM-of-InhwanTests.debug.xcconfig */,
+				8AD48F5E2E796ED902273A20 /* Pods-MVVM-of-InhwanTests.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -286,17 +298,25 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 19692E2127BCDFC000EAFBEF /* Build configuration list for PBXNativeTarget "MVVM-of-Inhwan" */;
 			buildPhases = (
-				14B698AAA387E98CC514A9BC /* [CP] Check Pods Manifest.lock */,
+				CEC60C96C81A3116DD05CCC7 /* [CP] Check Pods Manifest.lock */,
 				19692DF327BCDFBF00EAFBEF /* Sources */,
 				19692DF427BCDFBF00EAFBEF /* Frameworks */,
 				19692DF527BCDFBF00EAFBEF /* Resources */,
-				2453FCBBC38E55EE26DF86C8 /* [CP] Embed Pods Frameworks */,
+				BAA1494A1B852DAF7FDC169B /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "MVVM-of-Inhwan";
+			packageProductDependencies = (
+				19BA02E827C7B0D800F4EB1A /* FirebaseAuth */,
+				19BA02EA27C7B0D800F4EB1A /* FirebaseDatabaseSwift-Beta */,
+				19BA02EC27C7B0D800F4EB1A /* FirebaseFirestoreSwift-Beta */,
+				19BA02EE27C7B0D800F4EB1A /* FirebaseFunctionsSwift-Beta */,
+				19BA02F027C7B0D800F4EB1A /* FirebaseMessaging */,
+				19BA02F227C7B0D800F4EB1A /* FirebaseStorageSwift-Beta */,
+			);
 			productName = "MVVM-of-Inhwan";
 			productReference = 19692DF727BCDFBF00EAFBEF /* MVVM-of-Inhwan.app */;
 			productType = "com.apple.product-type.application";
@@ -305,7 +325,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 19692E2427BCDFC000EAFBEF /* Build configuration list for PBXNativeTarget "MVVM-of-InhwanTests" */;
 			buildPhases = (
-				6E43C0C4F631A269F6778A59 /* [CP] Check Pods Manifest.lock */,
+				C039C87B0D8996740818885E /* [CP] Check Pods Manifest.lock */,
 				19692E0927BCDFC000EAFBEF /* Sources */,
 				19692E0A27BCDFC000EAFBEF /* Frameworks */,
 				19692E0B27BCDFC000EAFBEF /* Resources */,
@@ -324,11 +344,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 19692E2727BCDFC000EAFBEF /* Build configuration list for PBXNativeTarget "MVVM-of-InhwanUITests" */;
 			buildPhases = (
-				81EB5E377D24D8EC85E5F219 /* [CP] Check Pods Manifest.lock */,
+				550900965F2286486FC33F4F /* [CP] Check Pods Manifest.lock */,
 				19692E1327BCDFC000EAFBEF /* Sources */,
 				19692E1427BCDFC000EAFBEF /* Frameworks */,
 				19692E1527BCDFC000EAFBEF /* Resources */,
-				BC17EF3ABD6CF73EEC1DDE1A /* [CP] Embed Pods Frameworks */,
+				759B8353EF82B91E24A46D97 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -372,6 +392,9 @@
 				Base,
 			);
 			mainGroup = 19692DEE27BCDFBF00EAFBEF;
+			packageReferences = (
+				19BA02E727C7B0D800F4EB1A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 19692DF827BCDFBF00EAFBEF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -412,68 +435,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		14B698AAA387E98CC514A9BC /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MVVM-of-Inhwan-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		2453FCBBC38E55EE26DF86C8 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MVVM-of-Inhwan/Pods-MVVM-of-Inhwan-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-MVVM-of-Inhwan/Pods-MVVM-of-Inhwan-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MVVM-of-Inhwan/Pods-MVVM-of-Inhwan-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6E43C0C4F631A269F6778A59 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-MVVM-of-InhwanTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		81EB5E377D24D8EC85E5F219 /* [CP] Check Pods Manifest.lock */ = {
+		550900965F2286486FC33F4F /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -495,7 +457,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		BC17EF3ABD6CF73EEC1DDE1A /* [CP] Embed Pods Frameworks */ = {
+		759B8353EF82B91E24A46D97 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -510,6 +472,67 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MVVM-of-Inhwan-MVVM-of-InhwanUITests/Pods-MVVM-of-Inhwan-MVVM-of-InhwanUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BAA1494A1B852DAF7FDC169B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MVVM-of-Inhwan/Pods-MVVM-of-Inhwan-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MVVM-of-Inhwan/Pods-MVVM-of-Inhwan-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MVVM-of-Inhwan/Pods-MVVM-of-Inhwan-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C039C87B0D8996740818885E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MVVM-of-InhwanTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CEC60C96C81A3116DD05CCC7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MVVM-of-Inhwan-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -710,7 +733,7 @@
 		};
 		19692E2227BCDFC000EAFBEF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5C6BA9231837631BB8BD9591 /* Pods-MVVM-of-Inhwan.debug.xcconfig */;
+			baseConfigurationReference = 3E19F5C62CCAD01FF3F706A7 /* Pods-MVVM-of-Inhwan.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -739,7 +762,7 @@
 		};
 		19692E2327BCDFC000EAFBEF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9884E771F32567B9FC585BFB /* Pods-MVVM-of-Inhwan.release.xcconfig */;
+			baseConfigurationReference = 5F82BAC8029883DF378C3C6B /* Pods-MVVM-of-Inhwan.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -768,7 +791,7 @@
 		};
 		19692E2527BCDFC000EAFBEF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F3EB8CAFF13030AC72EDF9E1 /* Pods-MVVM-of-InhwanTests.debug.xcconfig */;
+			baseConfigurationReference = 58BB22C1F64FBB36346A0DA5 /* Pods-MVVM-of-InhwanTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -789,7 +812,7 @@
 		};
 		19692E2627BCDFC000EAFBEF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1F5A5D3FB459D7F92D4ACAB5 /* Pods-MVVM-of-InhwanTests.release.xcconfig */;
+			baseConfigurationReference = 8AD48F5E2E796ED902273A20 /* Pods-MVVM-of-InhwanTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -810,7 +833,7 @@
 		};
 		19692E2827BCDFC000EAFBEF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = AF7DC8DA4D9B455A9C99D5AF /* Pods-MVVM-of-Inhwan-MVVM-of-InhwanUITests.debug.xcconfig */;
+			baseConfigurationReference = AC386FF4C395A2DCB887B859 /* Pods-MVVM-of-Inhwan-MVVM-of-InhwanUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -829,7 +852,7 @@
 		};
 		19692E2927BCDFC000EAFBEF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0582FBD66FD5C5057D5EF1B0 /* Pods-MVVM-of-Inhwan-MVVM-of-InhwanUITests.release.xcconfig */;
+			baseConfigurationReference = 814758C3E85C69C57B67760A /* Pods-MVVM-of-Inhwan-MVVM-of-InhwanUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -886,6 +909,50 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		19BA02E727C7B0D800F4EB1A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.10.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		19BA02E827C7B0D800F4EB1A /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 19BA02E727C7B0D800F4EB1A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		19BA02EA27C7B0D800F4EB1A /* FirebaseDatabaseSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 19BA02E727C7B0D800F4EB1A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseDatabaseSwift-Beta";
+		};
+		19BA02EC27C7B0D800F4EB1A /* FirebaseFirestoreSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 19BA02E727C7B0D800F4EB1A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreSwift-Beta";
+		};
+		19BA02EE27C7B0D800F4EB1A /* FirebaseFunctionsSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 19BA02E727C7B0D800F4EB1A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFunctionsSwift-Beta";
+		};
+		19BA02F027C7B0D800F4EB1A /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 19BA02E727C7B0D800F4EB1A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		19BA02F227C7B0D800F4EB1A /* FirebaseStorageSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 19BA02E727C7B0D800F4EB1A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseStorageSwift-Beta";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 19692DEF27BCDFBF00EAFBEF /* Project object */;
 }

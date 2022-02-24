@@ -6,11 +6,6 @@ target 'MVVM-of-Inhwan' do
   use_frameworks!
 
   # Pods for MVVM-of-Inhwan
-    pod 'Firebase/Auth'
-    pod 'Firebase/Firestore'
-    pod 'Firebase/Database'
-    pod 'Firebase/Storage'
-    pod 'Firebase/Messaging'
     pod 'ActiveLabel'
     pod 'SDWebImage', '~>4.4.2'
     pod 'JGProgressHUD', '~>2.0.3'
