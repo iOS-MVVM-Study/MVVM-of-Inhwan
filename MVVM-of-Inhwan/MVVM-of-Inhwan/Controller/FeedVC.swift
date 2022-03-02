@@ -1,4 +1,5 @@
 import UIKit
+import Firebase
 
 class FeedVC: UICollectionViewController {
     
@@ -15,6 +16,24 @@ class FeedVC: UICollectionViewController {
         view.backgroundColor = .white
         
         collectionView.register(FeedCVC.self, forCellWithReuseIdentifier: FeedCVC.identifier)
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Logout",
+                                                            style: .plain,
+                                                            target: self,
+                                                            action: #selector(logoutDidTap(_:)))
+    }
+    
+    // MARK: - Actions
+    
+    @objc private func logoutDidTap(_ sender: UIBarButtonItem) {
+        do {
+            try Auth.auth().signOut()
+            let controller = LoginVC()
+            let nav = UINavigationController(rootViewController: controller)
+            nav.modalPresentationStyle = .fullScreen
+            self.present(nav, animated: true, completion: nil)
+        } catch {
+            print("DEBUG: Failed to sign out")
+        }
     }
 }
 

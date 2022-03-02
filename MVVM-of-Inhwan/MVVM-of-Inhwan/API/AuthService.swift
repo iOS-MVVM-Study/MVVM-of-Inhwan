@@ -17,6 +17,10 @@ struct AuthCredentials {
 }
 
 struct AuthService {
+    static func logUserIn(withEmail email: String, password: String) async throws {
+        try await Auth.auth().signIn(withEmail: email, password: password)
+    }
+    
     static func registerUser(withCredential credentials: AuthCredentials) async throws {
 //        ImageUploader.uploadImage(image: credentials.profileImage) { imageUrl in
 //            dump(imageUrl)

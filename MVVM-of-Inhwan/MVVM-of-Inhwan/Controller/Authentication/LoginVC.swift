@@ -34,6 +34,7 @@ class LoginVC: UIViewController {
     private let loginButton: CustomButton = {
         let button = CustomButton()
         button.setTitle("Log In", for: .normal)
+        button.addTarget(self, action: #selector(loginButtonDidTap(_:)), for: .touchUpInside)
         return button
     }()
     
@@ -103,6 +104,21 @@ class LoginVC: UIViewController {
             viewModel.password = sender.text
         }
         updateForm()
+    }
+    
+    @objc private func loginButtonDidTap(_ sender: UIButton) {
+        guard let email = emailTextField.text,
+              let password = passwordTextField.text else { return }
+        
+        Task {
+            do {
+                try await AuthService.logUserIn(withEmail: email, password: password)
+                self.dismiss(animated: true, completion: nil)
+            } catch let error {
+                print("DEBUG: Failed to login user \(error.localizedDescription)")
+                return
+            }
+        }
     }
 }
 

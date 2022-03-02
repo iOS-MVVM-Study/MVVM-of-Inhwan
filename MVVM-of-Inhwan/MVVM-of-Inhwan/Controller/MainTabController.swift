@@ -1,4 +1,5 @@
 import UIKit
+import Firebase
 
 class MainTabController: UITabBarController {
     
@@ -8,6 +9,21 @@ class MainTabController: UITabBarController {
         super.viewDidLoad()
         configureUI()
         configureVCs()
+        checkIfUserIsLoggedIn()
+//        logout()
+    }
+    
+    // MARK: - API
+    
+    func checkIfUserIsLoggedIn() {
+        if Auth.auth().currentUser == nil {
+            DispatchQueue.main.async {
+                let controller = LoginVC()
+                let nav = UINavigationController(rootViewController: controller)
+                nav.modalPresentationStyle = .fullScreen
+                self.present(nav, animated: true, completion: nil)
+            }
+        }
     }
     
     // MARK: - func
