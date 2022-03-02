@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1906B3F127CF425F00F94DD8 /* ProfileCVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1906B3F027CF425F00F94DD8 /* ProfileCVC.swift */; };
+		1906B3F327CF427900F94DD8 /* ProfileHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1906B3F227CF427900F94DD8 /* ProfileHeader.swift */; };
 		1968D88D27C560150024A53C /* ImageUploader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1968D88C27C560150024A53C /* ImageUploader.swift */; };
 		1968D88F27C5601D0024A53C /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1968D88E27C5601D0024A53C /* AuthService.swift */; };
 		19692DFB27BCDFBF00EAFBEF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19692DFA27BCDFBF00EAFBEF /* AppDelegate.swift */; };
@@ -62,6 +64,8 @@
 
 /* Begin PBXFileReference section */
 		0FB7869CB43BED6B7D5DBE59 /* Pods_MVVM_of_Inhwan_MVVM_of_InhwanUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVM_of_Inhwan_MVVM_of_InhwanUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1906B3F027CF425F00F94DD8 /* ProfileCVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCVC.swift; sourceTree = "<group>"; };
+		1906B3F227CF427900F94DD8 /* ProfileHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeader.swift; sourceTree = "<group>"; };
 		1968D88C27C560150024A53C /* ImageUploader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageUploader.swift; sourceTree = "<group>"; };
 		1968D88E27C5601D0024A53C /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
 		19692DF727BCDFBF00EAFBEF /* MVVM-of-Inhwan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVVM-of-Inhwan.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -135,6 +139,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1906B3F427CF429B00F94DD8 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				1906B3F027CF425F00F94DD8 /* ProfileCVC.swift */,
+				1906B3F227CF427900F94DD8 /* ProfileHeader.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
 		19692DEE27BCDFBF00EAFBEF = {
 			isa = PBXGroup;
 			children = (
@@ -237,6 +250,7 @@
 		19692E2E27BCE1C500EAFBEF /* View */ = {
 			isa = PBXGroup;
 			children = (
+				1906B3F427CF429B00F94DD8 /* Profile */,
 				19692E3C27BD700B00EAFBEF /* FeedCVC.swift */,
 				19692E4927BEB24700EAFBEF /* CustomTextField.swift */,
 				19801FB827C4D2D9007D7FB9 /* CustomButton.swift */,
@@ -550,6 +564,7 @@
 				19692E4627BEAA0900EAFBEF /* LoginVC.swift in Sources */,
 				19801FBC27C4DCE9007D7FB9 /* AuthenticationViewModel.swift in Sources */,
 				19692E3927BCE7B600EAFBEF /* NotificationVC.swift in Sources */,
+				1906B3F327CF427900F94DD8 /* ProfileHeader.swift in Sources */,
 				19692E3B27BCE7E400EAFBEF /* ProfileVC.swift in Sources */,
 				19692E3D27BD700B00EAFBEF /* FeedCVC.swift in Sources */,
 				19692E3527BCE79A00EAFBEF /* SearchVC.swift in Sources */,
@@ -557,6 +572,7 @@
 				19692E3327BCE78A00EAFBEF /* FeedVC.swift in Sources */,
 				19692E3127BCE2D000EAFBEF /* MainTabController.swift in Sources */,
 				19692E4327BE29F600EAFBEF /* Extensions.swift in Sources */,
+				1906B3F127CF425F00F94DD8 /* ProfileCVC.swift in Sources */,
 				19692DFD27BCDFBF00EAFBEF /* SceneDelegate.swift in Sources */,
 				19692E4827BEAA1C00EAFBEF /* RegistrationVC.swift in Sources */,
 				19801FB927C4D2D9007D7FB9 /* CustomButton.swift in Sources */,
