@@ -2,6 +2,21 @@ import UIKit
 
 class ProfileVC: UICollectionViewController {
     
+    // MARK: Properties
+    
+    private var user: User
+    
+    // MARK: - initializer
+    
+    init(user: User) {
+        self.user = user
+        super.init(collectionViewLayout: UICollectionViewFlowLayout())
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     // MARK: - Life cycle
     
     override func viewDidLoad() {
@@ -9,9 +24,12 @@ class ProfileVC: UICollectionViewController {
         configureCollectionView()
     }
     
+    // MARK: - API
+    
     // MARK: - func
     
     private func configureCollectionView() {
+        navigationItem.title = user.username
         collectionView.backgroundColor = .white
         collectionView.register(ProfileCVC.self, forCellWithReuseIdentifier: ProfileCVC.identifier)
         collectionView.register(ProfileHeader.self,
@@ -35,7 +53,10 @@ extension ProfileVC {
     }
     
     override func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        
         guard let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: ProfileHeader.identifier, for: indexPath) as? ProfileHeader else { return UICollectionReusableView() }
+        
+        header.viewModel = ProfileHeaderViewModel(user: user)
         
         return header
     }

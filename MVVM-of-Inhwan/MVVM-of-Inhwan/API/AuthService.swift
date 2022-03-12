@@ -51,7 +51,7 @@ struct AuthService {
                                     "uid": uid,
                                     "username": credentials.username]
         
-        try await Firestore.firestore().collection("users").document(uid).setData(data)
+        try await COLLECTION_USERS.document(uid).setData(data)
     }
     
 }

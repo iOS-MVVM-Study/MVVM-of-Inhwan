@@ -1,17 +1,15 @@
-//
-//  LoginVC.swift
-//  MVVM-of-Inhwan
-//
-//  Created by 김인환 on 2022/02/18.
-//
-
 import UIKit
+
+protocol AuthenticationDelegate: AnyObject {
+    func authenticationComplete()
+}
 
 class LoginVC: UIViewController {
     
     // MARK: - Properties
     
     private var viewModel = LoginViewModel()
+    weak var delegate: AuthenticationDelegate?
     
     private let iconImageView: UIImageView = {
         let imageView = UIImageView(image: #imageLiteral(resourceName: "Instagram_logo_white"))
@@ -94,6 +92,7 @@ class LoginVC: UIViewController {
     
     @objc private func signUpDidTap(_ sender: UIButton) {
         let nextVC = RegistrationVC()
+        nextVC.delegate = delegate
         navigationController?.pushViewController(nextVC, animated: true)
     }
     
@@ -113,6 +112,7 @@ class LoginVC: UIViewController {
         Task {
             do {
                 try await AuthService.logUserIn(withEmail: email, password: password)
+                delegate?.authenticationComplete()
                 self.dismiss(animated: true, completion: nil)
             } catch let error {
                 print("DEBUG: Failed to login user \(error.localizedDescription)")
