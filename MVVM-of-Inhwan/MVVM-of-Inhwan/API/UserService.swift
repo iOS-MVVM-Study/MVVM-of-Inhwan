@@ -19,4 +19,14 @@ struct UserService {
             return nil
         }
     }
+    
+    static func fetchUsers() async -> [User]? {
+        do {
+            let snapshot = try await COLLECTION_USERS.getDocuments()
+            return snapshot.documents.map { User(dictionary: $0.data()) }
+        } catch {
+            print(error.localizedDescription)
+            return nil
+        }
+    }
 }

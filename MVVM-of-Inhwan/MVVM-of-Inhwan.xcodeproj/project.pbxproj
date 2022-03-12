@@ -38,6 +38,7 @@
 		19B3CC3027D9E3C00005862C /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B3CC2F27D9E3C00005862C /* User.swift */; };
 		19B3CC3227DA3D520005862C /* ProfileHeaderViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B3CC3127DA3D520005862C /* ProfileHeaderViewModel.swift */; };
 		19B3CC3427DC8CF70005862C /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B3CC3327DC8CF70005862C /* UserCell.swift */; };
+		19B3CC3627DD0AA30005862C /* UserCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19B3CC3527DD0AA20005862C /* UserCellViewModel.swift */; };
 		19BA02E927C7B0D800F4EB1A /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 19BA02E827C7B0D800F4EB1A /* FirebaseAuth */; };
 		19BA02EB27C7B0D800F4EB1A /* FirebaseDatabaseSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 19BA02EA27C7B0D800F4EB1A /* FirebaseDatabaseSwift-Beta */; };
 		19BA02ED27C7B0D800F4EB1A /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 19BA02EC27C7B0D800F4EB1A /* FirebaseFirestoreSwift-Beta */; };
@@ -104,6 +105,7 @@
 		19B3CC2F27D9E3C00005862C /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		19B3CC3127DA3D520005862C /* ProfileHeaderViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderViewModel.swift; sourceTree = "<group>"; };
 		19B3CC3327DC8CF70005862C /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
+		19B3CC3527DD0AA20005862C /* UserCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCellViewModel.swift; sourceTree = "<group>"; };
 		19E9C38427C5487900B0573B /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; name = "GoogleService-Info.plist"; path = "MVVM-of-Inhwan/GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		32786AC77A564CA4BBD092D6 /* Pods_MVVM_of_InhwanTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVM_of_InhwanTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3E19F5C62CCAD01FF3F706A7 /* Pods-MVVM-of-Inhwan.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM-of-Inhwan.debug.xcconfig"; path = "Target Support Files/Pods-MVVM-of-Inhwan/Pods-MVVM-of-Inhwan.debug.xcconfig"; sourceTree = "<group>"; };
@@ -256,6 +258,7 @@
 			children = (
 				19801FBA27C4DCD8007D7FB9 /* Authentication */,
 				19B3CC3127DA3D520005862C /* ProfileHeaderViewModel.swift */,
+				19B3CC3527DD0AA20005862C /* UserCellViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -594,6 +597,7 @@
 				1906B3F127CF425F00F94DD8 /* ProfileCVC.swift in Sources */,
 				19692DFD27BCDFBF00EAFBEF /* SceneDelegate.swift in Sources */,
 				19692E4827BEAA1C00EAFBEF /* RegistrationVC.swift in Sources */,
+				19B3CC3627DD0AA30005862C /* UserCellViewModel.swift in Sources */,
 				19801FB927C4D2D9007D7FB9 /* CustomButton.swift in Sources */,
 				19B3CC3027D9E3C00005862C /* User.swift in Sources */,
 			);
