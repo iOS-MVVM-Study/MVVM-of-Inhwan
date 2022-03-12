@@ -69,7 +69,8 @@ extension SearchVC {
 
 extension SearchVC {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let controller = ProfileVC(user: users[indexPath.row])
+        let user = isSearchMode ? filteredUsers[indexPath.row] : users[indexPath.row]
+        let controller = ProfileVC(user: user)
         navigationController?.pushViewController(controller, animated: true)
     }
 }
