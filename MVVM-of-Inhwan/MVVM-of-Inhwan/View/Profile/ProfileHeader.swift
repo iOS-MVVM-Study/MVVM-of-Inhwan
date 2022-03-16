@@ -1,6 +1,10 @@
 import UIKit
 import SDWebImage
 
+protocol ProfileHeaderDelegate: AnyObject {
+    func header(_ profileHeader: ProfileHeader, didTapActionButtonFor user: User)
+}
+
 class ProfileHeader: UICollectionReusableView {
     
     // MARK: - Properties
@@ -8,9 +12,11 @@ class ProfileHeader: UICollectionReusableView {
     static let identifier: String = "ProfileHeader"
     
     var viewModel: ProfileHeaderViewModel? {
-        didSet {
-            configure()
-        }
+        didSet { configure() }
+    }
+    
+    weak var delegate: ProfileHeaderDelegate? {
+        didSet { configure() }
     }
     
     private let profileImageView: UIImageView = {
@@ -103,6 +109,10 @@ class ProfileHeader: UICollectionReusableView {
         guard let viewModel = viewModel else { return }
         nameLabel.text = viewModel.fullname
         profileImageView.sd_setImage(with: viewModel.profileImageUrl)
+        
+        editProfileButton.setTitle(viewModel.followButtonText, for: .normal)
+        editProfileButton.setTitleColor(viewModel.followButtonTextColor, for: .normal)
+        editProfileButton.backgroundColor = viewModel.followButtonBackgroundColor
     }
     
     private func configureUI() {
@@ -160,6 +170,7 @@ class ProfileHeader: UICollectionReusableView {
     // MARK: - Actions
     
     @objc private func editButtonDidTap(_ sender: UIButton) {
-        
+        guard let viewModel = viewModel else { return }
+        delegate?.header(self, didTapActionButtonFor: viewModel.user)
     }
 }

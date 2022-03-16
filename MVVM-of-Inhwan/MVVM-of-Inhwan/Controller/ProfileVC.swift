@@ -22,9 +22,24 @@ class ProfileVC: UICollectionViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureCollectionView()
+        checkIfUserIsFollowed()
     }
     
     // MARK: - API
+    
+    private func checkIfUserIsFollowed() {
+        Task {
+            do {
+                guard let isFollowed = try await UserService.checkIfUserisFollowed(uid: self.user.uid) else { return }
+                self.user.isFollowed = isFollowed
+                await MainActor.run {
+                    self.collectionView.reloadData()
+                }
+            } catch {
+                print(error.localizedDescription)
+            }
+        }
+    }
     
     // MARK: - func
     
@@ -57,6 +72,7 @@ extension ProfileVC {
         guard let header = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: ProfileHeader.identifier, for: indexPath) as? ProfileHeader else { return UICollectionReusableView() }
         
         header.viewModel = ProfileHeaderViewModel(user: user)
+        header.delegate = self
         
         return header
     }
@@ -86,5 +102,37 @@ extension ProfileVC: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
         return CGSize(width: view.frame.width, height: 240)
+    }
+}
+
+extension ProfileVC: ProfileHeaderDelegate {
+    func header(_ profileHeader: ProfileHeader, didTapActionButtonFor user: User) {
+        if user.isCurrentUser {
+            print("DEBUG: Show edit profile here...")
+        } else if user.isFollowed {
+            Task {
+                do {
+                    try await UserService.unfollow(uid: user.uid)
+                    self.user.isFollowed = false
+                    await MainActor.run {
+                        self.collectionView.reloadData()
+                    }
+                } catch {
+                    print(error.localizedDescription)
+                }
+            }
+        } else {
+            Task {
+                do {
+                    try await UserService.follow(uid: user.uid)
+                    self.user.isFollowed = true
+                    await MainActor.run {
+                        self.collectionView.reloadData()
+                    }
+                } catch {
+                    print(error.localizedDescription)
+                }
+            }
+        }
     }
 }
