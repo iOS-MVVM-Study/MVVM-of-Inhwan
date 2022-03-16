@@ -48,4 +48,12 @@ struct UserService {
         let isFollowed = snapshot.exists
         return isFollowed
     }
+    
+    static func fetchUserStats(uid: String) async throws -> UserStats {
+        let followerSnapshot = try await COLLECTION_FOLLOWERS.document(uid).collection("user-followers").getDocuments()
+        let followers = followerSnapshot.documents.count
+        let followingSnapshot = try await COLLECTION_FOLLOWING.document(uid).collection("user-following").getDocuments()
+        let followings = followingSnapshot.documents.count
+        return UserStats(followers: followers, following: followings)
+    }
 }

@@ -23,6 +23,7 @@ class ProfileVC: UICollectionViewController {
         super.viewDidLoad()
         configureCollectionView()
         checkIfUserIsFollowed()
+        fetchUserStats()
     }
     
     // MARK: - API
@@ -32,6 +33,19 @@ class ProfileVC: UICollectionViewController {
             do {
                 guard let isFollowed = try await UserService.checkIfUserisFollowed(uid: self.user.uid) else { return }
                 self.user.isFollowed = isFollowed
+                await MainActor.run {
+                    self.collectionView.reloadData()
+                }
+            } catch {
+                print(error.localizedDescription)
+            }
+        }
+    }
+    
+    private func fetchUserStats() {
+        Task {
+            do {
+                self.user.stats = try await UserService.fetchUserStats(uid: self.user.uid)
                 await MainActor.run {
                     self.collectionView.reloadData()
                 }
